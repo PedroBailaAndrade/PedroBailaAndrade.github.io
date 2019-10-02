@@ -10,30 +10,63 @@
       <meta charset="utf-8">
     </head>
     <body>
-      <div class="container">
-        <div class="card1">
-          <div class="header">
-            <img src="images/profile.png" alt="Pedro Andrade" id="profile-img">
-            <div class="header-text">
-              <h1>Hi, I'm Pedro!</h1>
-              <h3>Junior Full Stack Developer</h3>
+      <div class="main-container">
+        <div class="container1">
+          <div class="card1">
+            <div class="header">
+              <img src="images/profile.png" alt="Pedro Andrade" id="profile-img">
+              <div class="header-text">
+                <h1>Hi, I'm Pedro!</h1>
+                <h3>Junior Full Stack Developer</h3>
+              </div>
+            </div>
+          <p>I recently completed the Le Wagon 9 week Full-Stack Bootcamp in Lisbon. I joined it after dropping out of college, where I was taking a Law degree. I started to realize that Law wasn't what I wanted for my future and decided to change my career path.</p>
+          <p>Searching for a new career path I stumbled across web development.
+  </p>
+          <p>In Le Wagon, I learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>SQL</strong>, <strong>git</strong>, <strong>GitHub</strong>, and <strong>Heroku</strong>. I also learned and improved soft skills like my workflow, teamwork, dealing with deadlines, and problem-solving.
+  </p>
+          <p><strong>Now I'm searching for a job where I can grow. By learning new programming languages and improving the ones that I already know. And continue to improve my soft skills.
+  </strong></p>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="card2">
+          <h2 onclick="myContact(2)">Contact Me</h2>
+            <div class="card2-info">
+              <p>pedrocbva@gmail.com</p>
+              <div class="links">
+                <a href="https://github.com/PedroBailaAndrade" target="_blank" id="a1"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/pedro-baila-andrade" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
             </div>
           </div>
-        <p>I recently completed the Le Wagon 9 week Full-Stack Bootcamp in Lisbon. I joined it after dropping out of college, where I was taking a Law degree. I started to realize that Law wasn't what I wanted for my future and decided to change my career path.</p>
-        <p>Searching for a new career path I stumbled across web development.
-</p>
-        <p>In Le Wagon, I learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>SQL</strong>, <strong>git</strong>, <strong>GitHub</strong>, and <strong>Heroku</strong>. I also learned and improved soft skills like my workflow, teamwork, dealing with deadlines, and problem-solving.
-</p>
-        <p><strong>Now I'm searching for a job where I can grow. By learning new programming languages and improving the ones that I already know. And continue to improve my soft skills.
-</strong></p>
-        </div>
-        <div class="card2" onclick="myContact()">
-        <h2>Contact Me</h2>
-          <div class="card2-info">
-            <p>pedrocbva@gmail.com</p>
-            <div class="links">
-              <a href="https://github.com/PedroBailaAndrade" target="_blank" id="a1"><i class="fab fa-github-square"></i></a>
-              <a href="https://www.linkedin.com/in/pedro-baila-andrade" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <div class="card3">
+              <h2 onclick="myContact(3)">Skills</h2>
+            <div class="card3-info">
+              <table>
+                <tr>
+                  <td style="border-right: 1px solid #008b8b; border-bottom:1px solid #008b8b"><h5>HTML</h5></td>
+                  <td style="border-bottom:1px solid #008b8b"><h5>CSS</h5></td>
+                  <td style="border-left: 1px solid #008b8b; border-bottom:1px solid #008b8b"><h5>JavaScript</h5></td>
+                </tr>
+                <tr>
+                  <td style="border-right:1px solid #008b8b"><h5>Ruby on Rails</h5></td>
+                  <td><h5>jQuery</h5></td>
+                  <td style="border-left:1px solid #008b8b"><h5>SQL</h5></td>
+                </tr>
+                <tr>
+                  <td style="border-right: 1px solid #008b8b; border-top:1px solid #008b8b"><h5>git</h5></td>
+                  <td style="border-top:1px solid #008b8b"><h5>GitHub</h5></td>
+                  <td style="border-left: 1px solid #008b8b; border-top:1px solid #008b8b"><h5>Heroku</h5></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card4">
+            <h2 onclick="myContact(4)">Portfolio</h2>
+            <div class="card4-info">
+              <h5>srfreve</h5>
+              <h5>file:///Users/pedrocbva/PedroBailaAndrade.github.io/index.html</h5>
             </div>
           </div>
         </div>
@@ -42,8 +75,8 @@
   </html>
 
 <script>
-  function myContact() {
-    var elem = document.querySelector(".card2-info")
+  function myContact(elem) {
+    var elem = document.querySelector(`.card${elem}-info`)
       if (elem.style.display === "none") {
         elem.style.display = "contents";
       } else {
