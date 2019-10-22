@@ -38,7 +38,7 @@
         </div>
         <div class="container2">
           <div class="card2">
-          <h2 onclick="myContact(2)">Contact Me</h2>
+          <h2 onclick="click(2)">Contact Me</h2>
             <div class="card2-info">
               <p>pedrocbva@gmail.com</p>
               <div class="links">
@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="card3">
-              <h2 onclick="myContact(3)">Skills</h2>
+              <h2 onclick="click(3)">Skills</h2>
             <div class="card3-info">
               <table>
                 <tr>
@@ -70,9 +70,9 @@
             </div>
           </div>
           <div class="card4">
-            <h2 onclick="myContact(4)">Portfolio</h2>
+            <h2 onclick="click(4)">Portfolio</h2>
             <div class="card4-info">
-              <a href="footylewagon.herokuapp.com"><h5>footylewagon.herokuapp.com</h5></a>
+              <a href="https://footylewagon.herokuapp.com"><h5>Footy </h5><h2>(mobile)</h2></a>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
   </html>
 
 <script>
-  function myContact(elem) {
+  function click(elem) {
     var elem = document.querySelector(`.card${elem}-info`)
       if (elem.style.display === "none") {
         elem.style.display = "contents";
