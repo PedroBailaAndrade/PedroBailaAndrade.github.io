@@ -39,6 +39,11 @@ p {
 }
 
 td {
+  text-align: center;
+  font-size: 18px;
+}
+
+th {
   padding: 0px 20px 0px 20px;
 }
 
@@ -63,8 +68,10 @@ td {
 }
 
 .container2 {
-  margin: 20px 94px 94px 94px;
-  position: fixed;
+  margin: 35px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 720px) {
