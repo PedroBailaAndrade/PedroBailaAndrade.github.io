@@ -56,22 +56,28 @@ th {
 }
 
 .main-container {
-  margin: 50px auto;
+  margin: 30px auto;
   width: 100%;
   display: inline-grid;
   justify-content: center;
 }
 
 .container1 {
-  margin: 20px auto;
+  margin: 150px auto 20px;
   width: 60%;
+  z-index: -1;
 }
 
 .container2 {
-  margin: 35px auto;
-  width: 60%;
+  width: 59.4%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 @media (max-width: 720px) {

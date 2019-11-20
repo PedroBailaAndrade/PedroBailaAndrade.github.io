@@ -3,7 +3,6 @@
     <head>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-
       <link href="https://fonts.googleapis.com/css?family=Blinker:300|Red+Hat+Display&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Pedro's Profile</title>
@@ -11,34 +10,9 @@
     </head>
     <body>
       <div class="main-container">
-        <div class="container1">
-          <div class="card1">
-            <div class="header">
-              <img src="images/profile.png" alt="Pedro Andrade" id="profile-img">
-              <div class="header-text">
-                <h1>Hi, I'm Pedro!</h1>
-                <h3>Junior Front End Developer</h3>
-              </div>
-            </div>
-          <p>
-            My first contact with code was in high school, although I enjoyed it at the time I was focused on going to law school.
-            Then came law school and when I decided that I didn´t want Law as a carrer I gave code a go.
-          </p>
-          <p>
-            So I started with some online exercises focused on web development.  As I did more exercises  I got motivated and challenged to learn more about it.
-          </p>
-          <p>
-            I joined Le Wagon finishing the 9 week full stack Bootcamp, in there I learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>SQL</strong>, <strong>git</strong>, <strong>GitHub</strong>, and <strong>Heroku</strong>. I also learned and improved soft skills. My workflow and teamwork improved a lot, and I learned much about problem-solving.
-          </p>
-          <p>
-            <strong>Now, I'm ready to apply this knowledge and skills. I'm searching for a job where I can grow and help growing.
-            </strong>
-          </p>
-          </div>
-        </div>
         <div class="container2">
           <div class="card2">
-          <h2 onclick="myContact(2)">Contact Me</h2>
+          <h2 onclick="myButton(2)">Contact Me</h2>
             <div class="card2-info">
               <p>pedrocbva@gmail.com</p>
               <div class="links">
@@ -48,7 +22,7 @@
             </div>
           </div>
           <div class="card3">
-              <h2 onclick="myContact(3)">Skills</h2>
+              <h2 onclick="myButton(3)">Skills</h2>
             <div class="card3-info">
               <table>
                 <tr>
@@ -80,24 +54,41 @@
             </div>
           </div>
           <div class="card4">
-            <h2 onclick="myContact(4)">Portfolio</h2>
+            <h2 onclick="myButton(4)">Portfolio</h2>
             <div class="card4-info">
               <a href="https://footylewagon.herokuapp.com" target="_blank" style="text-decoration: none"><p>Footy (mobile)</p></a>
             </div>
           </div>
         </div>
+        <div class="container1">
+          <div class="card1">
+            <div class="header">
+              <img src="images/profile.png" alt="Pedro Andrade" id="profile-img">
+              <div class="header-text">
+                <h1>Hi, I'm Pedro!</h1>
+                <h3>Junior Front End Developer</h3>
+              </div>
+            </div>
+          <p>
+            My first contact with code was in high school, although I enjoyed it at the time I was focused on going to law school.
+            Then came law school and when I decided that I didn´t want Law as a carrer I gave code a go.
+          </p>
+          <p>
+            So I started with some online exercises focused on web development.  As I did more exercises  I got motivated and challenged to learn more about it.
+          </p>
+          <p>
+            I joined Le Wagon finishing the 9 week full stack Bootcamp, in there I learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>SQL</strong>, <strong>git</strong>, <strong>GitHub</strong>, and <strong>Heroku</strong>. I also learned and improved soft skills. My workflow and teamwork improved a lot, and I learned much about problem-solving.
+          </p>
+          <p>
+            <strong>Now, I'm ready to apply this knowledge and skills. I'm searching for a job where I can grow and help growing.
+            </strong>
+          </p>
+          </div>
+        </div>
       </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     </body>
   </html>
-
-<script>
-  function myContact(elem) {
-    var elem = document.querySelector(`.card${elem}-info`)
-      if (elem.style.display === "none") {
-        elem.style.display = "contents";
-      } else {
-        elem.style.display = "none";
-      };
-  };
-</script>
 <!-- end of file>
