@@ -33,9 +33,17 @@ h3 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 25px;
   margin: 5px 12px 12px;
   text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  text-align: justify;
+  font-family: 'Blinker', sans-serif;
+  color: #008b8b;
 }
 
 td {
@@ -52,7 +60,16 @@ th {
 }
 
 #a1 {
+  color: #00aff0;
+}
+
+#a2 {
   margin-right: 40px;
+  color: #333;
+}
+
+#a3 {
+  color: #2867B2;
 }
 
 .main-container {
