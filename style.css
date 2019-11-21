@@ -158,7 +158,11 @@ th {
   display: none;
 }
 
-.links {
+.links1 {
+  display: inline;
+}
+
+.links2 {
   display: flex;
   justify-content: space-evenly;
 }
