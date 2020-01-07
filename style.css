@@ -57,6 +57,7 @@ th {
 
 .card2 a {
   font-size: 45px;
+  cursor: pointer;
 }
 
 #a1 {
@@ -168,6 +169,7 @@ th {
   height: fit-content;
   margin-bottom: 20px;
   width: max-content;
+  cursor: pointer;
 }
 
 .card2 p {
@@ -196,6 +198,7 @@ th {
   height: fit-content;
   margin-bottom: 20px;
   width: max-content;
+  cursor: pointer;
 }
 
 .card3-info {
@@ -210,6 +213,7 @@ th {
   text-align: center;
   height: fit-content;
   width: max-content;
+  cursor: pointer;
 }
 
 .card4-info {
